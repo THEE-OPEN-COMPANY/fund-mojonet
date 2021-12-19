@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --blue: #44C9F0;
+    --pink-light: #F044D3;
+    --pink-dark: #B444A1;
+    --green-light: #27E315;
+    --purple: #6A1CCC;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +23,7 @@ html {
   }
 body{
 
-    background: linear-gradient(90deg, rgba(90,81,224,1) 0%, rgba(220,228,228,1) 50%, rgba(221,13,45,1) 100%);
+    background: linear-gradient(45deg, var(--purple) 0% , var(--pink-light) 100%);
 }
 html, body{
     overflow-x: hidden;
@@ -49,7 +58,7 @@ nav{
 }
 
 .nav-links ul li a:hover{
-    background: #f4f4f4;
+    background: var(--blue);
 }
 
 .heading{
@@ -100,7 +109,7 @@ nav{
 
 .support-btn:hover{
     border: 1px solid #f4f4f4;
-    background: #f44336;
+    background: var(--blue);
     transition: 1s;
 }
 
@@ -185,6 +194,7 @@ nav{
 /*---goal section---*/
 .goals{
     height: 20vh;
+    background: var(--pink-light);
 
 }
 .goals-wrapper{
@@ -252,7 +262,7 @@ nav{
 }
 .funding h1::after{
     content: '';
-    background: #303ef7;
+    background: var(--purple);
     width: 100px;
     height: 5px;
     position: absolute;
@@ -284,7 +294,7 @@ nav{
     font-size: 17px;
 }
 .payment:hover{
-    background: linear-gradient(90deg, rgba(90,81,224,1) 0%, rgba(220,228,228,1) 50%, rgba(221,13,45,1) 100%);
+    background: linear-gradient(45deg, var(--purple) 0% , var(--pink-light) 100%);
     transform: scale(1.05);
 }
 @media(max-width: 700px){
@@ -294,6 +304,7 @@ nav{
 }
 footer{
     height: auto;
+    background: var(--pink-dark);
     width: 100vw;
     padding-top: 40px;
     font-weight: 400;
@@ -332,10 +343,11 @@ footer{
 }
 .socials a i{
     font-size: 25px;
+    color: #000;
     transition: color .4s ease;
 }
 .socials a:hover i{
-    color: #f44336;
+    color: var(--purple);
 }
 
 .footer-bottom{
