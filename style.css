@@ -23,7 +23,7 @@ html {
   }
 body{
 
-    background: linear-gradient(85deg, var(--blue) 0% , var(--pink-dark) 100%);
+    background: linear-gradient(75deg, var(--blue) 0% , var(--pink-dark) 100%);
 }
 html, body{
     overflow-x: hidden;
@@ -38,14 +38,17 @@ nav{
     align-items: center;
 }
 .logo{
-    width: 150px;
-    height: 90px;
-  
+    width: 200px;
+    height: 70px;  
 }
 .logo img{
     margin-top: 22px;
-    width: 190px;
-    height: 55px;
+    width: 170px;
+    height: 40px;
+    filter: brightness(120%);
+    filter: contrast(150%);
+
+
 }
 .nav-links{
     width: 25%;
